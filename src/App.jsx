@@ -2,6 +2,7 @@ import Header from "./components/Header.jsx";
 import Player from "./components/Player.jsx";
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
+import TimerChallange from "./components/TimerChallange.jsx";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -32,7 +33,12 @@ function App() {
       <StyledApp>
         <Header />
         <Player />
-        <div id="challenges"></div>
+        <div id="challenges">
+          <TimerChallange title="Easy" targetTime={1} />
+          <TimerChallange title="Easy" targetTime={5} />
+          <TimerChallange title="Easy" targetTime={10} />
+          <TimerChallange title="Easy" targetTime={15} />
+        </div>
       </StyledApp>
     </>
   );
