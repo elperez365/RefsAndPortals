@@ -69,7 +69,7 @@ const ResultModal = forwardRef(
       <Modal ref={dialog} onClose={onReset}>
         <h2>You {message}</h2>
         <p>
-          the target tima was <strong>{targetTime}</strong> seconds.
+          the target time was <strong>{targetTime}</strong> seconds.
         </p>
         <p>
           You stopped the timer with <strong>{timeLeft} seconds left</strong>
