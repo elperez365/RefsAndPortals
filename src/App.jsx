@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div id="modal"></div>
+
       <StyledApp>
         <Header />
         <Player />
