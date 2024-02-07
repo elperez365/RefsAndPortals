@@ -25,6 +25,14 @@ const StyledApp = styled.div`
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 `;
 
+const Challenges = styled.div`
+  max-width: 50rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+`;
+
 function App() {
   return (
     <>
@@ -33,12 +41,12 @@ function App() {
       <StyledApp>
         <Header />
         <Player />
-        <div id="challenges">
+        <Challenges>
           <TimerChallange title="Easy" targetTime={1} />
           <TimerChallange title="Medium" targetTime={5} />
           <TimerChallange title="Getting tough" targetTime={10} />
           <TimerChallange title="Pros Only" targetTime={15} />
-        </div>
+        </Challenges>
       </StyledApp>
     </>
   );
